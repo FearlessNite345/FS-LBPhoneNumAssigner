@@ -24,7 +24,7 @@ on('playerConnecting', async (name: string, _setKickReason: any, deferrals: any)
     }
 
     // Use the format from the config to create the phone number
-    const phoneNumber = config.lbphoneNumberFormat.replace("{number}", paddedNumber);
+    const phoneNumber = config.lbphoneNumberFormat.replace("{membernumber}", paddedNumber);
 
     try {
         await oxmysql.insert('INSERT IGNORE INTO phone_phones (id, owner_id, phone_number) VALUES (?, ?, ?)', [
