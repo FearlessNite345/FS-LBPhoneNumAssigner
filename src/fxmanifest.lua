@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'FearlessStudios'
 description 'FS-LBPhoneNumAssigner by FearlessStudios'
-version '1.0.1'
+version '1.0.2'
 
 server_script 'dist/server/**/*.js'
 
